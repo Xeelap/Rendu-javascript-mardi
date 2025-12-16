@@ -10,12 +10,12 @@ function verifPrecision(combattant) {
     }
 }
 
-function attaquer(attaquant, attaqué) {
+function attaquer(attaquant, cible) {
     console.log(attaquant.nom + " tente une attaque...")
     let precis = verifPrecision(attaquant)
         if (precis == true) {
-            attaqué.pv -= attaquant.attaque
-            console.log(" Touché ! " + attaqué.nom + " perd " + attaquant.attaque + " PV")
+            cible.pv -= attaquant.attaque
+            console.log(" Touché ! " + cible.nom + " perd " + attaquant.attaque + " PV")
         } else {
             console.log(" Attaque ratée")
         }
@@ -26,16 +26,6 @@ let abdoul = {
     pv: 200,
     attaque: 30,
     precision: 0.4,
-    attaquer: function(adversaire) {
-        console.log(this.nom + " tente une attaque...")
-        let precis = verifPrecision(this)
-        if (precis == true) {
-            adversaire.pv -= this.attaque
-            console.log(" Touché ! " + adversaire.nom + " perd " + this.attaque + " PV")
-        } else {
-            console.log(" Attaque ratée")
-        }
-    }
 }
 
 let sawda = {
@@ -43,16 +33,6 @@ let sawda = {
     pv: 170,
     attaque: 24,
     precision: 0.6,
-    attaquer: function(adversaire) {
-        console.log(this.nom + " tente une attaque...")
-        let precis = verifPrecision(this)
-        if (precis == true) {
-            adversaire.pv -= this.attaque
-            console.log(" Touché ! " + adversaire.nom + " perd " + this.attaque + " PV")
-        } else {
-            console.log(" Attaque ratée")
-        }
-    }
 }
 
 let tour = 1
@@ -67,7 +47,11 @@ while (abdoul.pv > 0 && sawda.pv > 0) {
     tour++
 }
 if (abdoul.pv > 0) {
+    console.log("Sawda n'a plus de pv")
+    console.log("Perso KO")
     console.log("Victoire d'Abdoul dans le colisée")
 } else {
+    console.log("Abdoul n'a plus de pv")
+    console.log("Perso KO")
     console.log("Victoire de Sawda dans le colisée")
 }
