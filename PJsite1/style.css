@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} /*Pour les polices*/
+
+body {
+  background-image: url(img/bg_cocktail.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -100px;
+} /*Place l'image de fond*/
+
+header {
+  background-color: #d45c5c;
+  color: #111111;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 5px;
+  font-family: "Story Script", sans-serif;
+}
+
+.top {
+  margin: 7%;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Lora", sans-serif;
+  font-weight: bold;
+  color: #e7cdcd;
+}
+
+.text_intro {
+  color: #e7cdcd;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lora", sans-serif;
+  height: 50%;
+  width: 90%;
+  margin-left: 5%;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #d45c5ce0;
+  background-color: #d45c5c5b;
+}
+
+.btn {
+  text-align: center;
+  padding-top: 2%;
+} /*Position le boutton*/
+
+.button {
+  display: inline-block;
+  background-color: #d45c5ca2;
+  color: #111111;
+  padding: 15px;
+  text-align: center;
+  width: 30%;
+  font-size: 40px;
+  border-radius: 15px;
+  cursor: grab;
+  border: 2px solid #d45c5c;
+  text-decoration: none;
+  transition: 0.5s;
+  box-shadow: 0 10px #111111;
+} /*design le boutton*/
+.button:hover {
+  background-color: #d45c5c;
+  color: #e7cdcd;
+} /*animation quand la souris passe sur le boutton*/
+.button:active {
+  box-shadow: 0 5px #0e0e0e;
+  transform: translateY(4px);
+} /*animation au clic*/
+
+.footer {
+  background-color: #d45c5c;
+  padding: 15px 10px;
+  text-align: center;
+  margin-top: 60px;
+  color: #e7cdcd;
+  font-family: "Lora", serif;
+}

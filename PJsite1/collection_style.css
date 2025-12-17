@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} /*Pour les polices*/
+
+header {
+  background-color: #d45c5c;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 5px;
+  font-family: "Story Script", sans-serif;
+} /*navbar*/
+
+a {
+  color: #111111;
+  text-decoration: none;
+} /*pour que le texte dans la navbar ne change pas de couleur et n'est souligné*/
+
+body {
+  background-color: #ad3a3a;
+}
+
+.cocktails {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ad3a3a;
+}
+
+.case {
+  background-color: #c76868e0;
+  width: 100%;
+  border: 2px solid #1e0101e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  margin-bottom: 5px;
+} /*design des cases*/
+
+img {
+  width: 20%;
+  border: 2px solid #1e0101e0;
+  border-radius: 10px;
+} /*design des images*/
+h2 {
+  height: 80px;
+  font-size: 60px;
+  padding-top: 5px;
+  font-family: "Tangerine", sans-serif;
+  font-weight: bold;
+} /*design des noms des cocktails*/
+
+p {
+  font-family: "Lora", sans-serif;
+  font-size: 30px;
+  line-height: 2;
+  padding-right: 40px;
+} /*design des decriptions*/
+
+.footer {
+  background-color: #d45c5c;
+  padding: 15px 10px;
+  text-align: center;
+  color: #e7cdcd;
+  font-family: "Lora", serif;
+}
+
+#darkModeBtn {
+  background-color: #b34444;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+#darkModeBtn.dark-mode {
+  background-color: #242424;
+  color: #f1f1f1; 
+} 
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body,
+header,
+.case,
+a,
+.cocktails,
+.footer,
+#darkModeBtn {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header.dark-mode {
+  background-color: #1b1b1b;
+}
+
+a.dark-mode{
+  color: #cccccc;
+}
+
+.case.dark-mode {
+  background-color: #242424;
+  border-color: #3a3a3a;
+}
+
+.cocktails.dark-mode {
+  background-color: #121212;
+}
+
+.footer.dark-mode {
+  background-color: #1b1b1b;
+  color: #cccccc;
+}
+
