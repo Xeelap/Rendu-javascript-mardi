@@ -1,4 +1,4 @@
-darkModeBtn = document.getElementById("darkModeBtn") // selectionne le bouton
+const darkModeBtn = document.getElementById("darkModeBtn") // selectionne le bouton
 
 elements = document.querySelectorAll(
   "body, a, header, .case, .cocktails, .footer, #darkModeBtn"
