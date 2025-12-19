@@ -146,7 +146,7 @@ header {
   right: 50%;
   transform: translate( 50%, 50%);
   transition: 0.3s ease;
-}
+} /*Design de base des barres*/
 
 .menu-burger span:nth-child(1) {
   top: 25%;
