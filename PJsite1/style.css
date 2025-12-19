@@ -107,18 +107,18 @@ header {
   text-align: center;
   font-size: 40px;
   transition: 0.3s ease;
-}
+}/*animation et design de la partie qui sort et rentre dans l'écran*/
 
 .menu-cache.visible{
   left: 0;
-}
+}/*animation ou le menu rentre dans l'ecran*/
 
 .menu {
   position: absolute;
   left: 20px;
   top: 40%;
   transform: translateY(-50%);
-}
+}/*positionement des barres du menu burger*/
 
 .menu-burger{
   height: 50px;
@@ -134,6 +134,7 @@ header {
 .menu-cache a:hover {
   color: #494848;
 }
+/*quand la souris passe sur le texte il change de couleur*/
 
 .menu-burger span{
   height: 5px;
@@ -168,6 +169,8 @@ header {
   top: 50%;
   transform: translate( 50%, 50%) rotate(-45deg);
 }
+
+/*Design les barres et fait en sorte que les 3 barres deviennent une croix une fois passer dessus*/
 
 
 

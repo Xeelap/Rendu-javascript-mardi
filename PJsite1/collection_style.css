@@ -80,7 +80,7 @@ p {
   padding: 8px 15px;
   margin: 5px;
   border-radius: 20px;
-}
+}/*design le bouton dark mode*/
 
 #darkModeBtn.dark-mode {
   background-color: #242424;
@@ -90,7 +90,7 @@ p {
 body.dark-mode {
   background-color: #121212;
   color: #f1f1f1;
-}
+}/*change les couleurs du fond et du texte une fois en drak mode*/
 
 body,
 header,
@@ -100,7 +100,7 @@ a,
 .footer,
 #darkModeBtn {
   transition: background-color 0.5s ease, color 0.5s ease;
-}
+}/*animation fondue quand les couleurs changent*/
 
 header.dark-mode {
   background-color: #1b1b1b;
@@ -122,5 +122,5 @@ a.dark-mode{
 .footer.dark-mode {
   background-color: #1b1b1b;
   color: #cccccc;
-}
+}/*change les couleurs du fond et du texte une fois en drak mode*/
 
